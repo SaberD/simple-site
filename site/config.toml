@@ -8,7 +8,6 @@ disqusShortname = "saberd-com"
 googleAnalytics = "UA-87282480-1"
 # Define the number of posts per site
 paginate = 10
-theme = "hugo-theme-wave2"
 # Enable Emoji emoticons support for page content.
 # See www.emoji-cheat-sheet.com
 enableEmoji = true

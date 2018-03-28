@@ -1,0 +1,16 @@
+{
+  "name": "solar-flare",
+  "version": "0.0.1",
+  "private": true,
+
+  "dependencies": {
+    "cal-heatmap": "~3.6.0",
+    "d3": "~3.5.17",
+    "highlightjs": "~9.1.0",
+    "icomoon": "latest",
+    "jquery": "~2.2.4",
+    "jquery.hotkeys": "latest",
+    "lunr.js": "~0.7.1",
+    "font-awesome": "latest"
+  }
+}

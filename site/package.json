@@ -1,0 +1,9 @@
+{
+  "name": "my-project",
+  "scripts": {
+    "env": "env",
+    "serve": "hugo serve",
+    "index": "hugo-lunr -o static/json/search.json",
+    "build": "npm run index && bash git-log"
+  }
+}
