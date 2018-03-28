@@ -1,0 +1,36 @@
+baseurl = "https://saberd.com"
+languageCode = "en-us"
+title = "Saber Derouiche"
+googleAnalytics = "UA-87282480-1"
+paginate = 10
+#theme = "hugo-theme-wave2"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug"
+
+[params]
+    location = "No"
+    site_description = "A site about Saber Derouiche"
+    copyright  = "Powered by [Hugo](//gohugo.io)."
+    date_format = "2016-01-01"
+
+[[params.menu]]
+    before = true
+    label  = "Home"
+    link   = "/"
+
+[[params.menu]]
+    before = false
+    label  = "Tags"
+    link   = "tags/"
+
+[[params.menu]]
+    before = false
+    label  = "Categories"
+    link   = "categories/"
+
+[params.widgets]
+    recent_articles = true
+    categories = true
+    tags = true
+    tag_cloud = true

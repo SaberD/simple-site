@@ -1,0 +1,45 @@
+<section id="main">
+    {{ range (.Paginate (where .Data.Pages "Section" "==" "post")).Pages }}
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner">
+            {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
+            <a href="{{ .Permalink }}" itemprop="url">
+                <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" class="article-banner"> {{ end }}
+            </a>
+            {{ partial "article_header" . }}
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    {{ .Summary }} 
+                </p>
+                <p class="article-more-link">
+                    <a href="{{ .Permalink }}">
+			            Read more
+                    </a>
+                </p>
+            </div>
+        </div>
+    </article>
+    {{ end }}
+    <div class="heatmap">
+	    <h3>Calendar Activities</h3>
+        <div id="cal-heatmap"></div>
+        <div id="example-heatmap"></div>
+	<script type="text/javascript">
+	var cal = new CalHeatMap();
+	cal.init({
+		itemSelector: "#example-heatmap",
+		domain: "month",
+		data: "/json/datas.json",
+		start: new Date(2016,8,8),
+		cellSize: 9,
+		range: 14,
+		previousSelector: "#example-b-PreviousDomain-selector",
+		nextSelector: "#example-b-NextDomain-selector",
+		legend: [2, 4, 6, 8],
+      		tooltip: true 
+	});
+	</script>
+    </div>
+    {{ partial "pagination" . }}
+</section>
+<!-- // main section -->

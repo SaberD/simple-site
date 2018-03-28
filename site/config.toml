@@ -1,3 +1,94 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Homepage"
+title = "Saber Derouiche"
+theme = "hugo-theme-wave2"
+# Enable comments by entering your Disqus shortname
+disqusShortname = "saberd-com"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = "UA-87282480-1"
+# Define the number of posts per site
+paginate = 10
+theme = "hugo-theme-wave2"
+# Enable Emoji emoticons support for page content.
+# See www.emoji-cheat-sheet.com
+enableEmoji = true
+search = true
+
+
+[permalinks]
+    post = "/post/:slug"
+
+[params]
+    # Tell me who you're
+    location = ""
+    site_description = ""
+    copyright  = "Powered by [Gitlab](//gitlab.com)."
+
+    # Format dates with Go's time formating
+    date_format = "2006-01-02"
+
+
+# Create custom menu entries by defining a label and a link for
+# them. Since you can also link posts you've the option the
+# place the links before or after them.
+#
+# E.g.: "Home" appears before all linked posts in the menu
+# and "Tags" / "Categories" after them.
+[[params.menu]]
+    before = true
+    label  = "Home"
+    link   = "/"
+
+[[params.menu]]
+    before = false
+    label  = "Tags"
+    link   = "tags/"
+
+[[params.menu]]
+    before = false
+    label  = "Categories"
+    link   = "categories/"
+
+# Enter a link for the follow button on the left
+[params.profile]
+    follow_button = ""
+
+
+[social]
+# Add your social network accounts to the profile section on the left
+# by entering your username. The links to your account will be
+# create automatically.
+    github          = "saberd"
+    bitbucket       = ""
+    jsfiddle        = ""
+    codepen         = ""
+    foursquare      = ""
+    dribbble        = ""
+    deviantart      = ""
+    behance         = ""
+    flickr          = "saberd"
+    instagram       = ""
+    youtube         = "sabertooth"
+    vimeo           = ""
+    vine            = ""
+    medium          = ""
+    wordpress       = ""
+    tumblr          = ""
+    xing            = ""
+    linkedin        = "saber derouiche"
+    slideshare      = ""
+    stackoverflow   = ""
+    reddit          = ""
+    pinterest       = ""
+    googleplus      = ""
+    facebook        = "saber derouiche"
+    facebook_admin  = ""
+    twitter_domain  = ""
+    twitter         = "saberd"
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    recent_articles = true
+    categories = true
+    tags = true
+    tag_cloud = true

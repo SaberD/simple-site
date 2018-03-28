@@ -1,0 +1,12 @@
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+	<footer id="footer-left">
+	    &copy; {{now.Format "2006"}} <a href="https://saberd.com/">saberd.com</a>. <br>
+	    {{ with .Site.Params.copyright }}{{ . | markdownify}}{{ end }}
+	</footer>
+	    <footer id="footer-center"> <a href="#"><span class="icon-phoenix_logo"></span></a>  </footer>
+	   <footer id="footer-right"> <a href="http://presse.no/pfu/etiske-regler/Presseetiske-veiledere">Ethical guidelines</a>  </footer>
+    </div>
+  </div>
+</footer>
